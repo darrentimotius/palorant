@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url(/assets/HYWenHei.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bytesized';
+    src: url(/assets/Bytesized-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+/* Background */
+.bg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%;
+    background-color: #ECE7E1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 66px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.logo {
+    font-family: 'HYWenHei', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 0 28px 0 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    margin-left: 56px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #ffffff;
+}
+
+.report-btn {
+    margin-left: auto;
+}
+
+.report-btn button {
+    background-color: #c49a6c;
+    border: none;
+    height: 66px;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1; */
+}
+
+.main .title {
+    font-family: 'HYWenHei', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    width: 100%;
+    background-color: #0F1822;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    z-index: 2;
+}
+
+.main .title h1 {
+    width: 90%;
+    justify-self: center;
+    align-self: self-end;
+    margin-bottom: 55px;
+    color: #fff;
+}
+
+.news-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60% 40%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.main-news {
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.main-news .news-text {
+    font-family: 'Helvetica', Arial, sans-serif;
+    width: 50%;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.main-news .news-text h3 {
+    font-size: 14px;
+    color: #EA4954;
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+
+    span {
+        color: #000000;
+    };
+}
+
+.main-news .news-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-news .news-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.main-news img {
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.news-item .news-text {
+    font-family: 'Helvetica', Arial, sans-serif;
+    width: 80%;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.news-item .news-text h3 {
+    font-size: 12px;
+    color: #EA4954;
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+
+    span {
+        color: #000000;
+    };
+}
+
+.news-item .news-text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-item .news-text p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+.news-item img {
+    width: 80%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    margin-top: auto;
+    background-color: #000000;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.giot-logo {
+    font-family: 'Bytesized', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 68px;
+    margin-bottom: 4px;
+    word-spacing: -0.2em;
+    align-items: center;
+    justify-content: center;
+}
+.change-color-logo {
+    color: #276bff;
+}
+
+.footer-text {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    line-height: 140%;
+    color: #7e7e7e;
+}
+
+.esrb-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    width: 222px;
+    height: 121px;
+    background-color: #7e7e7e42;
+    border-radius: 10px;
+    position: relative;
+}
+
+.esrb-box p {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    padding-left: 12px;
+}
+
+.esrb-box img {
+    float: left;
+    width: 65px;
+}
+
+/* Responsive Design */
+.menu-toggle {
+    position: fixed;
+    top: 9px;
+    right: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    display: none;
+}
+
+.menu-toggle-close {
+    position: fixed;
+    top: 9px;
+    right: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 66px;
+    width: 0px;
+    height: calc(94vh + 320px);
+    background-color: #ffffff;
+    overflow: none;
+    z-index: 999;
+    transition: width 0.3s ease;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 0;
+    list-style: none;
+    padding: 24px 0 24px 35px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu .report-btn button {
+    margin: 0;
+    width: 100%;
+}
+
+.menu li:hover, .nav-links li:focus {
+    border-left: #69e0ff 4px solid;
+}
+
+.menu li.active {
+    border-left: #69e0ff 4px solid;
+}
+
+@media (max-width: 1024px) {
+    .navbar .nav-links, .navbar .report-btn {
+        display: none;
+    }
+
+    .navbar .logo {
+        color: #ffffff;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.hidden {
+        display: none;
+    }
+
+    .menu-toggle-close.active {
+        display: block;
+    }
+
+    .menu.active {
+        display: block;
+        width: 300px;
+    }
+
+    .bg {
+        background-size: cover;
+    }
+
+    .main .title {
+        height: 30vh;
+    }
+
+    .news-cont {
+        grid-template-rows: 55% 45%;
+    }
+
+    .news-item .news-text p {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 0 17px 0 32px;
+    }
+
+    .menu-toggle {
+        top: 5px;
+        right: 2rem;
+        font-size: 30px;
+    }
+    
+    .menu-toggle-close {
+        top: 5px;
+        right: 2rem;
+        font-size: 30px;
+    }
+
+    .menu {
+        top: 55px;
+    }
+
+    .main .title {
+        height: 25vh;
+    }
+
+    .main .title h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .news-cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 40px;
+    }
+
+    .main-news {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-top: 20px;
+        margin: 0;
+    }
+
+    .main-news .news-text {
+        font-family: 'Helvetica', Arial, sans-serif;
+        width: 80%;
+        align-items: center;
+        margin-top: 16px;
+    }
+    
+    .main-news .news-text h3 {
+        font-size: 12px;
+        color: #EA4954;
+        margin-bottom: 8px;
+        letter-spacing: 0.1em;
+    
+        span {
+            color: #000000;
+        };
+    }
+    
+    .main-news .news-text h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .main-news .news-text p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+
+    .main-news img {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+
+    .footer {
+        height: 290px;
+    }
+    
+    .giot-logo {
+        font-size: 55px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+        padding: 0 25px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .esrb-box {
+        width: 192px;
+        height: 91px;
+    }
+    
+    .esrb-box p {
+        font-size: 10px;
+    }
+    
+    .esrb-box img {
+        width: 55px;
+        height: auto;
+    }
+}

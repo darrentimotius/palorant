@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url(assets/HYWenHei.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Bytesized';
+    src: url(assets/Bytesized-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+/* Background */
+.bg {
+    /* flex: 1; */
+    background: url("/assets/home-background.png") no-repeat top center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    height: 100%;
+    color: #EDE6E1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 66px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    font-family: 'HYWenHei', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 0 28px 0 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    margin-left: 56px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #ffffff;
+}
+
+.report-btn {
+    margin-left: auto;
+}
+
+.report-btn button {
+    background-color: #c49a6c;
+    border: none;
+    height: 66px;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Home */
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 69vh;
+}
+
+.home-content {
+    display: flex;
+    /* padding: 30px 0 0 85px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 260px;
+    flex-direction: column;
+}
+
+.home-content h1 {
+    font-family: 'HYWenHei', Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    color: #EA4855;
+    margin: 0;
+}
+
+.home-content p {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    border: #dfdfdf 1px solid;
+    padding: 2px 7px;
+    margin: 0;
+}
+
+/* News */
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 600px; */
+    /* background-color: whitesmoke; */
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    margin-top: auto;
+    background-color: #000000;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.giot-logo {
+    font-family: 'Bytesized', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 68px;
+    margin-bottom: 4px;
+    word-spacing: -0.2em;
+    align-items: center;
+    justify-content: center;
+}
+.change-color-logo {
+    color: #276bff;
+}
+
+.footer-text {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    line-height: 140%;
+    color: #7e7e7e;
+}
+
+.esrb-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    width: 222px;
+    height: 121px;
+    background-color: #7e7e7e42;
+    border-radius: 10px;
+    position: relative;
+}
+
+.esrb-box p {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    padding-left: 12px;
+}
+
+.esrb-box img {
+    float: left;
+    width: 65px;
+}
+
+/* Responsive Design */
+.menu-toggle {
+    position: fixed;
+    top: 9px;
+    right: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    display: none;
+}
+
+.menu-toggle-close {
+    position: fixed;
+    top: 9px;
+    right: 2rem;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 66px;
+    width: 0px;
+    /* height: calc(94vh + 320px); */
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 999;
+    transition: width 0.3s ease;
+    min-height: 100%;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 0;
+    list-style: none;
+    padding: 24px 0 24px 35px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu .report-btn button {
+    margin: 0;
+    width: 100%;
+}
+
+.menu li:hover, .nav-links li:focus {
+    border-left: #69e0ff 4px solid;
+}
+
+.menu li.active {
+    border-left: #69e0ff 4px solid;
+}
+
+@media (max-width: 1024px) {
+    .navbar .nav-links, .navbar .report-btn {
+        display: none;
+    }
+
+    .navbar .logo {
+        color: #ffffff;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.hidden {
+        display: none;
+    }
+
+    .menu-toggle-close.active {
+        display: block;
+    }
+
+    .menu.active {
+        display: block;
+        width: 300px;
+    }
+
+    .bg {
+        background-size: cover;
+    }
+
+    .home {
+        height: 50vh;
+    }
+
+    .home-content h1 {
+        font-size: 55px;
+    }
+    
+    .home-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 55px;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 0 17px 0 32px;
+    }
+
+    .menu-toggle {
+        top: 5px;
+        right: 2rem;
+        font-size: 30px;
+    }
+    
+    .menu-toggle-close {
+        top: 5px;
+        right: 2rem;
+        font-size: 30px;
+    }
+
+    .menu {
+        top: 55px;
+    }
+
+    .home {
+        height: 40vh;
+    }
+
+    .home-content {
+        margin-top: 17vh;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+    
+    .home-content p {
+        font-size: 13px;
+    }
+
+    .footer {
+        height: 290px;
+    }
+    
+    .giot-logo {
+        font-size: 55px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+        padding: 0 25px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .esrb-box {
+        width: 192px;
+        height: 91px;
+    }
+    
+    .esrb-box p {
+        font-size: 10px;
+    }
+    
+    .esrb-box img {
+        width: 55px;
+        height: auto;
+    }
+}
