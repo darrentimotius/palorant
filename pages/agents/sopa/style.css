@@ -99,6 +99,7 @@ body {
     flex-direction: column;
     height: 93vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .upper {
