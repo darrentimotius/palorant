@@ -22,7 +22,7 @@ body {
 /* Background */
 .bg {
     /* flex: 1; */
-    background: url("/assets/home-background.png") no-repeat top center/cover;
+    background: url("assets/home-background.png") no-repeat top center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
