@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'HYWenHei';
-    src: url(/assets/HYWenHei.ttf) format('truetype');
+    src: url(../../../assets/HYWenHei.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Bytesized';
-    src: url(/assets/Bytesized-Regular.ttf) format('truetype');
+    src: url(../../../assets/Bytesized-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -21,7 +21,7 @@ body {
 /* Background */
 .bg {
     flex: 1;
-    background: url("/assets/agents-bg.png") no-repeat top center/cover;
+    background: url("../../../assets/agents-bg.png") no-repeat top center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -211,27 +211,27 @@ body {
 }
 
 .agent-select .jitt img:hover {
-    content: url("/assets/agent-select/jitt-selected.png");
+    content: url("../../../assets/agent-select/jitt-selected.png");
     width: 81px;
 }
 
 .agent-select .suga img:hover {
-    content: url("/assets/agent-select/suga-selected.png");
+    content: url("../../../assets/agent-select/suga-selected.png");
     width: 81px;
 }
 
 .agent-select .pinix img:hover {
-    content: url("/assets/agent-select/pinix-selected.png");
+    content: url("../../../assets/agent-select/pinix-selected.png");
     width: 81px;
 }
 
 .agent-select .reza img:hover {
-    content: url("/assets/agent-select/reza-selected.png");
+    content: url("../../../assets/agent-select/reza-selected.png");
     width: 81px;
 }
 
 .agent-select .sopa img:hover {
-    content: url("/assets/agent-select/sopa-selected.png");
+    content: url("../../../assets/agent-select/sopa-selected.png");
     width: 81px;
 }
 
@@ -517,7 +517,7 @@ body {
     }
 
     .agent-img {
-        content: url("/assets/suga/suga-mobile.png");
+        content: url("../../../assets/suga/suga-mobile.png");
         margin: -260px 0 0 20px;
         width: 100%;
         z-index: 0;
