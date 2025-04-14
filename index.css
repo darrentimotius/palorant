@@ -6,6 +6,7 @@
     height: 100%;
     align-items: center;
     background-color: #EDE6E1;
+    overflow-x: hidden;
 }
 
 /* Home */
