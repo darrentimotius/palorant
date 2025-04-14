@@ -283,27 +283,27 @@
     }
 
     .agent-select .jitt img:hover {
-        content: url("../../../assets/agent-select/jitt-selected.png");
+        content: url("../../assets/agent-select/jitt-selected.png");
         width: 55px;
     }
     
     .agent-select .suga img:hover {
-        content: url("../../../assets/agent-select/suga-selected.png");
+        content: url("../../assets/agent-select/suga-selected.png");
         width: 55px;
     }
     
     .agent-select .pinix img:hover {
-        content: url("../../../assets/agent-select/pinix-selected.png");
+        content: url("../../assets/agent-select/pinix-selected.png");
         width: 55px;
     }
     
     .agent-select .reza img:hover {
-        content: url("../../../assets/agent-select/reza-selected.png");
+        content: url("../../assets/agent-select/reza-selected.png");
         width: 55px;
     }
     
     .agent-select .sopa img:hover {
-        content: url("../../../assets/agent-select/sopa-selected.png");
+        content: url("../../assets/agent-select/sopa-selected.png");
         width: 55px;
     }
 }
