@@ -1,0 +1,5 @@
+@media (max-width: 1024px) {
+    .agent-img {
+        content: url("../../assets/suga/suga-responsive.png");
+    }
+}

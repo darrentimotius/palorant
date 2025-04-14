@@ -1,0 +1,7 @@
+@media (max-width: 1024px) {
+    .agent-img {
+        content: url("../../assets/sopa/sopa-responsive.png");
+        position: relative;
+        height: 120%;
+    }
+}
