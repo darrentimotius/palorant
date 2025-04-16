@@ -1,0 +1,142 @@
+small{
+    display: inline-block;
+    margin-top: 5px;
+    visibility: hidden;
+    height: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: #f5f5f5;
+} 
+
+.container {
+    margin-top: 155px;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: auto;
+}
+
+.container h1 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.report {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: auto; */
+    /* gap: 10px; */
+}
+
+.form-input label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-input input {
+    padding: 6px 12px;
+    border: 1px solid #bdc2c5;
+    border-radius: 5.2px;
+    font-size: 14px;
+}
+
+.form-input input:focus {
+    outline: none;
+    border: 1px solid #4a4e69;
+}
+
+.form-input select {
+    padding: 6px 12px;
+    border: 1px solid #bdc2c5;
+    border-radius: 5.2px;
+}
+
+.form-input select:focus {
+    outline: none;
+    border: 1px solid #4a4e69;
+}
+
+.form-input select option {
+    padding: 6px 12px;
+    border: 1px solid #bdc2c5;
+    border-radius: 5.2px;
+    font-size: 14px;
+}
+
+.form-input select option:focus {
+    outline: none;
+    border: 1px solid #4a4e69;
+}
+
+.form-input #bug {
+    padding: 6px 12px;
+    border: 1px solid #bdc2c5;
+    border-radius: 5.2px;
+    height: 60px;
+    resize: vertical;
+    overflow: auto;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-input #bug:focus {
+    outline: none;
+    border: 1px solid #4a4e69;
+}
+
+.form-checkbox label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-checkbox input {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 33px;
+    background-color: #EA4855;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5.2px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: #EA4855;
+    box-shadow: 0 0 2px #000 inset;
+}
+
+.error small {
+    color: #EA4855;
+    font-weight: 400;
+    visibility: visible;
+    height: auto;
+}

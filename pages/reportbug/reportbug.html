@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report Bug</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reportbug.css">
     <link rel="stylesheet" href="../../global.css">
     <script src="../../script.js" defer></script>
+    <script src="reportbug.js" defer></script>
 </head>
 <body>
     <div class="bg">
@@ -37,6 +38,53 @@
                 <button >REPORT BUG</button>
             </a>
         </nav>
+
+        <div class="main">
+            <div class="container">
+                <h1>SUBMIT AN ISSUE</h1>
+
+                <form class="report" id="report">
+                    <div class="form-input">
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                        <small>Error Messages</small>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <small>Error Messages</small>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="server">Server</label>
+                        <select id="server">
+                            <option value="-">-</option>
+                            <option value="NA">North America</option>
+                            <option value="EU">Europe</option>
+                            <option value="ASIA">Asia</option>
+                            <option value="SA">South America</option>
+                            <option value="AU">Australia</option>
+                        </select>
+                        <small>Error Messages</small>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="bug">Bug Description</label>
+                        <textarea id="bug"></textarea>
+                        <small>Error Messages</small>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="followup">
+                        <label for="followup">I agree to be contacted for follow-up</label>
+                        <br> <small>Error Messages</small>
+                    </div>
+
+                    <input type="submit" value="SUBMIT" class="submit-btn" id="submit">
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="footer">
