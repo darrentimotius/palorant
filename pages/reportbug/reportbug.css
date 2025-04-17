@@ -142,6 +142,12 @@ small{
     height: auto;
 }
 
+@media (max-width: 1024px) {
+    .main {
+        height: 130vh;
+    }
+}
+
 @media (max-width: 768px) {
     .main {
         height: 130vh;
