@@ -215,7 +215,7 @@
 
 @media (max-width: 768px) {
     .left-side {
-        min-width: 40%;
+        width: 40%;
     }
 
     .left-content {
